@@ -3,7 +3,9 @@ import React from 'react'
 const page = () => {
   return (
     <>
-    <h1>Second</h1>
+    <h1>Second (flexBox con mui)
+      
+    </h1>
       
     </>
   )

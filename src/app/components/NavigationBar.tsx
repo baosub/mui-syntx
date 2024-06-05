@@ -11,12 +11,17 @@ const NavigationBar = () => {
             </Link></span>
 
             <span> <Link href="/first">
-              <h4>First</h4> 
+              <h4>First(mui layout components)</h4> 
             </Link></span>
 
             <span> <Link href="/second">
-                <h4>Second</h4>
+                <h4>Second(css flexbox with mui Box component)</h4>
             </Link></span>
+
+            <span> <Link href="/third">
+                <h4>Third(responsive Design with sx property)</h4>
+            </Link></span>
+
 
 
         </>

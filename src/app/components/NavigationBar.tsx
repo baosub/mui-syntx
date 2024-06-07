@@ -6,17 +6,17 @@ const NavigationBar = () => {
     return (
         <>
 
-            <span> <Link href="/">
+            <Link href="/">
                 <h4>Home</h4>
-            </Link></span>
+            </Link>
 
-            <span> <Link href="/first">
+             <Link href="/first">
               <h4>First</h4> 
-            </Link></span>
+            </Link>
 
-            <span> <Link href="/second">
+            <Link href="/second">
                 <h4>Second</h4>
-            </Link></span>
+            </Link>
 
 
         </>

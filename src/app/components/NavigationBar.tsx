@@ -20,7 +20,9 @@ import AdbIcon from '@mui/icons-material/Adb';
 
 const pages = [
   { title: 'Home', path: '/' },
-  { title: 'About', path: '/second' }
+  { title: 'About', path: '/about'},
+    {title: 'Contact', path: '/contact'},
+   
 ];
 
 
@@ -45,7 +47,7 @@ const NavigationBar = () => {
  // const handleCloseUserMenu = () => {
     //setAnchorElUser(null);};
   return (
-    <AppBar position="static" color='inherit'>
+    <AppBar position="static" >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

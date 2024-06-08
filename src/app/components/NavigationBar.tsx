@@ -1,25 +1,47 @@
-import React from 'react'
+
+'use client'
+
 import Link from "next/link";
+import React, { useState } from 'react';
+
 
 
 const NavigationBar = () => {
-    return (
-        <>
+    const [isOpen, setIsOpen] = useState(false);
 
-            <span> <Link href="/">
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+
+    return (
+
+
+        <div className={`fullscreen-menu ${isOpen ? 'open' : ''}`}>
+                 <button onClick={toggleMenu}>Menú</button>
+
+                 {isOpen &&(<div>
+
+                    <span> <Link onClick={toggleMenu} href="/">
                 <h4>Home</h4>
             </Link></span>
 
-            <span> <Link href="/first">
-              <h4>First</h4> 
+            <span> <Link onClick={toggleMenu} href="/first">
+                <h4>First</h4>
             </Link></span>
 
-            <span> <Link href="/second">
+            <span> <Link onClick={toggleMenu} href="/second">
                 <h4>Second</h4>
             </Link></span>
+                    </div>)}
+            
 
 
-        </>
+        </div>
+
+
+
     )
 }
 

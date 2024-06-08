@@ -5,6 +5,7 @@ import React from 'react'
 import ResponsiveNav from './responsivebar/ResponsiveNav'
 import ResponsiveBox from './responsivebar/ResponsiveBox'
 import Amenu from './responsivebar/Amenu'
+import AnotherResponsiveBar from './responsivebar/AnotherResponsiveBar'
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
     <ResponsiveNav/>
     <ResponsiveBox/>
     <Amenu/>
+    <AnotherResponsiveBar/>
       
     </Container>
   )

@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import { Typography } from '@mui/material';
 
 const Amenu = () => {
 
@@ -23,7 +24,7 @@ const Amenu = () => {
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
       >
-        Dashboard
+       <Typography color={'green'}>Dashboard</Typography> 
       </Button>
       <Menu
         id="basic-menu"

@@ -1,6 +1,7 @@
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
+import ResponsiveBar from './components/ResponsiveBar';
 
 
 
@@ -21,6 +22,7 @@ export default function RootLayout({
         <AppRouterCacheProvider>
           
         <ThemeProvider theme={theme}>
+          <ResponsiveBar/>
         
           
           {children}</ThemeProvider>

@@ -9,30 +9,30 @@ import { AppBar, Box, Container } from '@mui/material';
 
 const pages = [
     { title: 'Home', path: '/' },
-    { title: 'First', path: '/first'},
-      {title: 'Second', path: '/second'},
-     
-  ];
+    { title: 'First', path: '/first' },
+    { title: 'Second', path: '/second' },
+
+];
 
 
 const NavigationBar = () => {
-	
-   
+
+
     return (
         <>
             <AppBar>
                 <Container maxWidth='xl'>
 
-                    <Box  sx={{display: 'flex'}}>
+                    <Box sx={{ display: 'flex' }}>
                         {
-                            pages.map((page)=>(
+                            pages.map((page) => (
 
-                                <Box  key={page.title}>
-                                    <Box  sx={{color: 'white', textDecoration: 'none', padding: '5px'}} component={Link} href={page.path}>{page.title}</Box>
+                                <Box key={page.title}>
+                                    <Box sx={{ color: 'white', textDecoration: 'none', padding: '5px' }} component={Link} href={page.path}>{page.title}</Box>
 
 
                                 </Box>
-                                
+
                             ))
                         }
 

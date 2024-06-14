@@ -1,8 +1,10 @@
-
+'use client';
 
 import React from 'react'
 import Link from "next/link";
 import { AppBar, Box, Container } from '@mui/material';
+
+
 
 
 const pages = [
@@ -14,6 +16,7 @@ const pages = [
 
 
 const NavigationBar = () => {
+	
    
     return (
         <>
@@ -24,7 +27,7 @@ const NavigationBar = () => {
                         {
                             pages.map((page)=>(
 
-                                <Box key={page.title}>
+                                <Box  key={page.title}>
                                     <Box  sx={{color: 'white', textDecoration: 'none', padding: '5px'}} component={Link} href={page.path}>{page.title}</Box>
 
 
